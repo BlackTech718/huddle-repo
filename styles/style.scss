@@ -4,7 +4,7 @@
     margin:0px;
 }
 body{
-    background-image: url(./bg-mobile.svg);
+    background-image: url(/huddle-repo/imgs/bg-mobile.svg);
     background-repeat: no-repeat;
     background-position: center/cover;
     background-color: hsl(257, 40%, 49%);
@@ -44,7 +44,7 @@ body{
     text-align: center;
     font-family: 'Poppins',sans-serif;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 32px;
     color:#fff;
     padding-bottom: 1rem;
 }
@@ -100,7 +100,7 @@ body{
 
 @media(min-width:376px){
     body{
-        background-image: url(./bg-desktop.svg);
+        background-image: url(/huddle-repo/imgs/bg-desktop.svg);
         background-repeat: no-repeat;
         background-position:center/cover;
         padding:0px;
@@ -112,7 +112,7 @@ body{
     width:80%;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     gap:none;
     grid-template-areas: 
     "logo logo logo logo"
