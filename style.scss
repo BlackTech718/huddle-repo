@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-image: url(./bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center/cover;
+    background-color: hsl(257, 40%, 49%);
+}
+.g-wrapper{
+    max-height: 100vh;
+    margin:20px auto 0 auto;
+    display:grid;
+    grid-template-columns:minmax(375px, 1fr);
+    grid-template-areas:
+    "logo"
+    "pics"
+    "title"
+    "content"
+    "reg"
+    "social"
+    "attribution"
+}
+.logo{
+    grid-area:logo;
+    width:100%;
+    padding-bottom: 4rem;
+    img{
+        width:40%;
+        // max-width: 100%;
+    }
+}
+.pics{
+    grid-area:pics;
+    padding-bottom: 3rem;
+    img{
+        max-width: 95%;
+    }
+}
+.title{
+    grid-area:title;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color:#fff;
+    padding-bottom: 1rem;
+}
+.content{
+    grid-area:content;
+    text-align: center;
+    font-family:'Open Sans',sans-serif;
+    padding-bottom: 2rem;
+    color:#fff;
+    font-size: 17px;
+    font-weight:400;
+    line-height:1.2rem;
+}
+.reg{
+    grid-area:reg;
+    text-align: center;
+    padding-bottom: 2rem;
+    .btn{
+        font-family: 'Poppins',sans-serif;
+        font-size:14px;
+        background-color: #fff;
+        color:hsl(257, 40%, 49%);
+        padding: 10px 50px;
+        border-radius:100px 100px 100px 100px;
+    }
+}
+.social{
+    grid-area:social;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    .circle{
+        display:flex;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        color: #fff;
+        margin-left: 5%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.attribution{
+    font-size: 12px;
+    text-align: center;
+    grid-area:attribution;
+    a{
+        color:white;
+        font-family:'Poppins',sans-serif;
+    }
+}
+
+@media(min-width:376px){
+    body{
+        background-image: url(./bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-position:center/cover;
+        padding:0px;
+        margin:0px;
+    }
+    .g-wrapper{
+    max-width: 1440px;
+    margin:25px auto 0 auto;
+    width:80%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap:none;
+    grid-template-areas: 
+    "logo logo logo logo"
+    "pics pics title title"
+    "pics pics content content"
+    "pics pics reg reg "
+    "pics pics . ."
+    ". . . social"
+    ". attribution attribution ."
+}
+.logo{
+    grid-area:logo;
+    padding-bottom:50px;
+    img{
+        max-width: 22%;
+    }
+}
+.pics{
+    max-width: 100%;
+    padding: 0px;
+    grid-area:pics;
+    img{
+        max-width:100%;
+    }
+}
+.title{
+    text-align: left;
+    grid-area:title;
+    justify-content: left;
+    padding-top:50px;
+    padding-bottom: 0px;
+    padding-left:90px;
+  
+}
+.content{
+    grid-area:content;
+    text-align: left;
+    padding-left: 90px;
+    font-size: 12px;
+    font-family: 'Open Sans',sans-serif;
+   
+}
+.reg{
+    grid-area:reg;
+    text-align: left;
+    padding-left:90px;
+}
+.social{
+    grid-area:social;
+    padding:0px;
+   
+}
+.attribution{
+    grid-area:attribution;
+    
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <style>
+//     .attribution { font-size: 11px; text-align: center; }
+//     .attribution a { color:white; font-family:'Poppins',sans-serif; }
+//   </style>
