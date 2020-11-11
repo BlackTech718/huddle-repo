@@ -131,7 +131,7 @@ body {
   font-family: 'Poppins',sans-serif;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 700px) {
   body {
     background-image: url(/huddle-repo/imgs/bg-desktop.svg);
     background-repeat: no-repeat;
